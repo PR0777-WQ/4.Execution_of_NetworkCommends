@@ -27,6 +27,23 @@ This commands includes
 <BR>
 
 ## Output
+### ping
+![alt text](ping.png)
+
+### tracert
+![alt text](tracert.png)
+
+### ipconfig
+![alt text](ipconfig.png)
+
+### ftp
+![alt text](ftp.png)
+
+### netstat
+![alt text](netstat.png)
+
+### nslookup
+![alt text](nslookup.png)
 
 ## Result
 Thus Execution of Network commands Performed 
