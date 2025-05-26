@@ -26,7 +26,24 @@ This commands includes
 • Other IP Commands e.g. show ip route etc.
 <BR>
 
+
+      import socket 
+      from pythonping import ping 
+      s=socket.socket() 
+      s.bind(('localhost'8000)) 
+      s.listen(5) 
+      c,addr=s.accept() 
+      while True: 
+      hostname=c.recv(1024).decode() 
+      try: 
+      c.send(str(ping(hostname, verbose=False)).encode()) 
+      except KeyError: 
+      c.send("Not Found".encode())
 ## Output
+
+
+![Screenshot 2025-04-27 205037](https://github.com/user-attachments/assets/6307749f-bc82-4367-ac43-1ed019262c8f)
+
 
 ## Result
 Thus Execution of Network commands Performed 
